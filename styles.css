@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+body{
+    background: #aaaaaa;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+h1{
+    color: #555555;
+}
+
+.flex-container {
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 35px auto;
+    box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.flex-element {
+    color: #ffffff;
+    padding: 5px;
+    margin: 5px;
+    background: firebrick;
+    border-radius: 3px;
+    height: 220px;
+
+    order: 0;
+    flex-grow: 1;
+    flex-basis: 100px;
+}
+
+.flex-element p{
+    padding: 0px;
+    margin: 0px;
+    align: center;
+    text-align: center;
+}
+
+.flex-element figure{
+    margin: auto;
+}
+
+.in-figure{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    overflow: hidden;
+    background: firebrick;
+    text-align: center;
+}
+
+.in-figure img{
+    margin: auto;
+    padding: 0;
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+.info{
+    margin: 3px auto 0px auto;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+
+.info p{
+    color: #999999;
+}
+
+a {
+    text-decoration: underline;
+    color: #333;
+}
+
+a:hover {
+    color: #00a0de;
+    text-decoration: underline;
+}
+
+.main-menu {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    font-size: 16px;
+}
+
+.main-menu li {
+    list-style: none;
+    float: left;
+    background: url(i/top-menu-bg.gif) bottom repeat-x #efefef;
+    margin: 0 3px 0 0;
+    padding: 0;
+}
+
+.main-menu li a {
+    padding: 6px 10px;
+    text-decoration: none;
+    display: block;
+    color: #999999;
+}
+
+.main-menu li a:hover {
+    padding: 6px 10px;
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+    background: url(i/fl-bg-hover.gif) bottom repeat-x #67bdff;
+}
+
+.current-item {
+    text-decoration: underline;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.upload-block {
+    margin: 30px 0px 30px 0px;
+    padding: 0;
+}
+
+.upload-block ul {
+    float: none;
+    display: block;
+    margin: 10px 0px 10px 0px;
+    padding: 0;
+}
+
+.upload-block li {
+    list-style: none;
+    float: none;
+    display: block;
+    margin: 0px 0px 15px 0px;
+    padding: 0;
+}
+
+.upload-block li:first-child {
+    margin: 0px 0px 5px 0px;
+    padding: 0;
+}
