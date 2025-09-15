@@ -8,6 +8,7 @@ if (!file_exists($uploadPath)){
 include($_SERVER['DOCUMENT_ROOT'] . '/include/functions.php');
 include($_SERVER['DOCUMENT_ROOT'] . '/template/header.php');
 ?>
+
 <div class="upload-block">
     <form enctype="multipart/form-data" action="/include/handler_upload_form.php" method="POST" id="upl-form">
         <ul>
